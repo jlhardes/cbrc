@@ -9,7 +9,7 @@ class GenericFile < ActiveFedora::Base
 	index.as :stored_searchable, :facetable
   property :catalogNumber, predicate: ::RDF::Vocab::DWC.catalogNumber do |index|
 	index.as :stored_searchable, :facetable
-  property :occurenceID, predicate: ::RDF::Vocab::DWC.occurenceID do |index|
+  property :occurrenceID, predicate: ::RDF::Vocab::DWC.occurrenceID do |index|
 	index.as :stored_searchable, :facetable
   property :country, predicate: ::RDF::Vocab::DWC.country do |index|
 	index.as :stored_searchable, :facetable
