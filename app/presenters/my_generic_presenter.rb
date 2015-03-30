@@ -3,7 +3,7 @@ class MyGenericPresenter < Sufia::GenericFilePresenter
                        :tag, :rights, :publisher, :date_created, :subject, :language,
                        :identifier, :based_near, :related_url, :basisOfRecord, :institutionCode, 
                        :collectionCode, :catalogNumber, :occurrenceID, :country, :countryCode, 
-                       :stateProvince, :locality, :scienctificName, :scientificNameAuthorship, 
+                       :stateProvince, :locality, :scientificName, :scientificNameAuthorship, 
                        :taxonRank, :kingdom, :class, :order, :family, :genus, 
                        :earlistPeriodOrLowestSystem, :earliestEpochOrLowestSeries, :formation]
 end
