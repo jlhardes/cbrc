@@ -40,7 +40,7 @@ class GenericFile < ActiveFedora::Base
   property :kingdom, predicate: ::RDF::Vocab::DWC.kingdom do |index|
 	index.as :stored_searchable, :facetable
   end
-  property :class, predicate: ::RDF::Vocab::DWC.class do |index|
+  property :dwcclass, predicate: ::RDF::Vocab::DWC.class do |index|
 	index.as :stored_searchable, :facetable
   end
   property :order, predicate: ::RDF::Vocab::DWC.order do |index|
