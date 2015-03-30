@@ -4,6 +4,6 @@ class MyGenericPresenter < Sufia::GenericFilePresenter
                        :identifier, :based_near, :related_url, :basisOfRecord, :institutionCode, 
                        :collectionCode, :catalogNumber, :occurrenceID, :country, :countryCode, 
                        :stateProvince, :locality, :scientificName, :scientificNameAuthorship, 
-                       :taxonRank, :kingdom, :class, :order, :family, :genus, 
+                       :taxonRank, :kingdom, :dwcclass, :order, :family, :genus, 
                        :earlistPeriodOrLowestSystem, :earliestEpochOrLowestSeries, :formation]
 end
