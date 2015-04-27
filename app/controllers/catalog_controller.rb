@@ -98,7 +98,38 @@ class CatalogController < ApplicationController
     config.add_index_field solr_name("dwcclass", :stored_searchable), label: "Class" 
     config.add_index_field solr_name("order", :stored_searchable), label: "Order"  
     config.add_index_field solr_name("family", :stored_searchable), label: "Family"  
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"  
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    
+    
+    
+     :basisOfRecord,
+  :institutionCode,
+ :collectionCode, 
+ :catalogNumber, 
+  :occurrenceID, 
+   :country, 
+   :countryCode,
+  :stateProvince,
+:locality, 
+  :scientificName, 
+ :scientificNameAuthorship,
+  :taxonRank,
+  :kingdom, 
+   :dwcclass, 
+   :order, 
+  :family,
+   :genus, 
+  :earlistPeriodOrLowestSystem, 
+ :earliestEpochOrLowestSeries, 
+ :formation, 
     
 
     # solr fields to be displayed in the show (single result) view
