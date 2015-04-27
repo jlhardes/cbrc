@@ -100,36 +100,22 @@ class CatalogController < ApplicationController
     config.add_index_field solr_name("family", :stored_searchable), label: "Family"  
     config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
     
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
-    config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("basisOfRecord", :stored_searchable), label: "Basis of Record"
+    config.add_index_field solr_name("institutionCode", :stored_searchable), label: "Insitution Code"
+    config.add_index_field solr_name("collectionCode", :stored_searchable), label: "Collection Code"
+    config.add_index_field solr_name("catalogNumber", :stored_searchable), label: "Catalog Number"
+    config.add_index_field solr_name("occurrenceID", :stored_searchable), label: "Occurence ID"
+    config.add_index_field solr_name("country", :stored_searchable), label: "Country"
+    config.add_index_field solr_name("countryCode", :stored_searchable), label: "Country Code"
     
-    
-    
-     :basisOfRecord,
-  :institutionCode,
- :collectionCode, 
- :catalogNumber, 
-  :occurrenceID, 
-   :country, 
-   :countryCode,
-  :stateProvince,
-:locality, 
-  :scientificName, 
- :scientificNameAuthorship,
-  :taxonRank,
-  :kingdom, 
-   :dwcclass, 
-   :order, 
-  :family,
-   :genus, 
-  :earlistPeriodOrLowestSystem, 
- :earliestEpochOrLowestSeries, 
- :formation, 
+    config.add_index_field solr_name("stateProvince", :stored_searchable), label: "State/Province"
+    config.add_index_field solr_name("locality", :stored_searchable), label: "Locality"
+    config.add_index_field solr_name("scientificName", :stored_searchable), label: "Scientific Name"
+    config.add_index_field solr_name("scientificNameAuthorship", :stored_searchable), label: "Scientific Name Authorship"
+    config.add_index_field solr_name("taxonRank", :stored_searchable), label: "Taxon Rank"
+    config.add_index_field solr_name("earlistPeriodOrLowestSystem", :stored_searchable), label: "Earliest Period or Lowest System"
+    config.add_index_field solr_name("earliestEpochOrLowestSeries", :stored_searchable), label: "Earliest Epoch or Lowest System"
+    config.add_index_field solr_name("formation", :stored_searchable), label: "Formation"
     
 
     # solr fields to be displayed in the show (single result) view
