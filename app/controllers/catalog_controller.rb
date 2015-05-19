@@ -104,6 +104,7 @@ class CatalogController < ApplicationController
     config.add_index_field solr_name("specificEpithet", :stored_searchable), label: "Specific Epithet"
     config.add_index_field solr_name("infraspecificEpithet", :stored_searchable), label: "Infraspecific Epithet"
     
+    config.add_index_field solr_name("collectionCode", :stored_searchable), label: "Collection Code"
     config.add_index_field solr_name("catalogNumber", :stored_searchable), label: "Catalog Number"
     config.add_index_field solr_name("otherCatalogNumbers", :stored_searchable), label: "Other Catalog Numbers"
     config.add_index_field solr_name("continent", :stored_searchable), label: "Continent"
@@ -116,6 +117,7 @@ class CatalogController < ApplicationController
     config.add_index_field solr_name("decimalLatitude", :stored_searchable), label: "Decimal Latitude"
     config.add_index_field solr_name("decimalLongitude", :stored_searchable), label: "Decimal Longitude"
     config.add_index_field solr_name("scientificName", :stored_searchable), label: "Scientific Name"
+    config.add_index_field solr_name("scientificNameAuthorship", :stored_searchable), label: "Scientific Name Authorship"
     config.add_index_field solr_name("typeStatus", :stored_searchable), label: "Type Status"
     config.add_index_field solr_name("associatedMedia", :stored_searchable), label: "Associated Media"
 
