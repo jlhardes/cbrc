@@ -67,7 +67,4 @@ class GenericFile < ActiveFedora::Base
   property :typeStatus, predicate: ::RDF::Vocab::DWC.typeStatus do |index|
 	index.as :stored_searchable, :facetable
   end
-  property :associatedMedia, predicate: ::RDF::Vocab::DWC.associatedMedia do |index|
-	index.as :stored_searchable, :facetable
-  end
 end
