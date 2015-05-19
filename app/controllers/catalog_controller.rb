@@ -64,6 +64,7 @@ class CatalogController < ApplicationController
     config.add_facet_field solr_name("publisher", :facetable), label: "Publisher", limit: 5
     config.add_facet_field solr_name("file_format", :facetable), label: "File Format", limit: 5
     config.add_facet_field solr_name("kingdom", :facetable), label: "Kingdom", limit: 5
+    config.add_facet_field solr_name("phylum", :facetable), label: "Phylum", limit: 5
     config.add_facet_field solr_name("dwcclass", :facetable), label: "Class", limit: 5  
     config.add_facet_field solr_name("order", :facetable), label: "Order", limit: 5 
     config.add_facet_field solr_name("family", :facetable), label: "Family", limit: 5 
@@ -95,28 +96,28 @@ class CatalogController < ApplicationController
     config.add_index_field solr_name("format", :stored_searchable), label: "File Format"
     config.add_index_field solr_name("identifier", :stored_searchable), label: "Identifier"
     config.add_index_field solr_name("kingdom", :stored_searchable), label: "Kingdom"
+    config.add_index_field solr_name("phylum", :stored_searchable), label: "Phylum"
     config.add_index_field solr_name("dwcclass", :stored_searchable), label: "Class" 
     config.add_index_field solr_name("order", :stored_searchable), label: "Order"  
     config.add_index_field solr_name("family", :stored_searchable), label: "Family"  
     config.add_index_field solr_name("genus", :stored_searchable), label: "Genus"
+    config.add_index_field solr_name("specificEpithet", :stored_searchable), label: "Specific Epithet"
+    config.add_index_field solr_name("infraspecificEpithet", :stored_searchable), label: "Infraspecific Epithet"
     
-    config.add_index_field solr_name("basisOfRecord", :stored_searchable), label: "Basis of Record"
-    config.add_index_field solr_name("institutionCode", :stored_searchable), label: "Insitution Code"
-    config.add_index_field solr_name("collectionCode", :stored_searchable), label: "Collection Code"
     config.add_index_field solr_name("catalogNumber", :stored_searchable), label: "Catalog Number"
-    config.add_index_field solr_name("occurrenceID", :stored_searchable), label: "Occurence ID"
+    config.add_index_field solr_name("otherCatalogNumbers", :stored_searchable), label: "Other Catalog Numbers"
+    config.add_index_field solr_name("continent", :stored_searchable), label: "Continent"
     config.add_index_field solr_name("country", :stored_searchable), label: "Country"
-    config.add_index_field solr_name("countryCode", :stored_searchable), label: "Country Code"
     
     config.add_index_field solr_name("stateProvince", :stored_searchable), label: "State/Province"
+    config.add_index_field solr_name("county", :stored_searchable), label: "County"
+    config.add_index_field solr_name("higherGeography", :stored_searchable), label: "Higher Geography"
     config.add_index_field solr_name("locality", :stored_searchable), label: "Locality"
+    config.add_index_field solr_name("decimalLatitude", :stored_searchable), label: "Decimal Latitude"
+    config.add_index_field solr_name("decimalLongitude", :stored_searchable), label: "Decimal Longitude"
     config.add_index_field solr_name("scientificName", :stored_searchable), label: "Scientific Name"
-    config.add_index_field solr_name("scientificNameAuthorship", :stored_searchable), label: "Scientific Name Authorship"
-    config.add_index_field solr_name("taxonRank", :stored_searchable), label: "Taxon Rank"
-    config.add_index_field solr_name("earlistPeriodOrLowestSystem", :stored_searchable), label: "Earliest Period or Lowest System"
-    config.add_index_field solr_name("earliestEpochOrLowestSeries", :stored_searchable), label: "Earliest Epoch or Lowest System"
-    config.add_index_field solr_name("formation", :stored_searchable), label: "Formation"
-    
+    config.add_index_field solr_name("typeStatus", :stored_searchable), label: "Type Status"
+    config.add_index_field solr_name("associatedMedia", :stored_searchable), label: "Associated Media"
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display
@@ -137,6 +138,7 @@ class CatalogController < ApplicationController
     config.add_show_field solr_name("format", :stored_searchable), label: "File Format"
     config.add_show_field solr_name("identifier", :stored_searchable), label: "Identifier"
     config.add_show_field solr_name("kingdom", :stored_searchable), label: "Kingdom"
+    config.add_show_field solr_name("phylum", :stored_searchable), label: "Phylum"
     config.add_show_field solr_name("dwcclass", :stored_searchable), label: "Class" 
     config.add_show_field solr_name("order", :stored_searchable), label: "Order"  
     config.add_show_field solr_name("family", :stored_searchable), label: "Family"  
