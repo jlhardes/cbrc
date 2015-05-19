@@ -5,5 +5,5 @@ class MyGenericPresenter < Sufia::GenericFilePresenter
                        :catalogNumber, :otherCatalogNumbers, :continent, :country, :county, :higherGeography, 
                        :stateProvince, :locality, :decimalLatitude, :decimalLongitude, :scientificName, :scientificNameAuthorship, 
                        :kingdom, :phylum, :dwcclass, :order, :family, :genus, :specificEpithet, 
-                       :infraspecificEpithet, :typeStatus, :associatedMedia]
+                       :infraspecificEpithet, :typeStatus]
 end
