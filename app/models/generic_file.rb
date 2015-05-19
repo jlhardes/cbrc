@@ -1,6 +1,9 @@
 # app/models/generic_file.rb
 class GenericFile < ActiveFedora::Base
   include Sufia::GenericFile
+  property :collectionCode, predicate: ::RDF::Vocab::DWC.collectionCode do |index|
+	index.as :stored_searchable, :facetable
+  end
   property :catalogNumber, predicate: ::RDF::Vocab::DWC.catalogNumber do |index|
 	index.as :stored_searchable, :facetable
   end
@@ -32,6 +35,9 @@ class GenericFile < ActiveFedora::Base
 	index.as :stored_searchable, :facetable
   end
   property :scientificName, predicate: ::RDF::Vocab::DWC.scientificName do |index|
+	index.as :stored_searchable, :facetable
+  end
+  property :scientificNameAuthorship, predicate: ::RDF::Vocab::DWC.scientificNameAuthorship do |index|
 	index.as :stored_searchable, :facetable
   end
   property :kingdom, predicate: ::RDF::Vocab::DWC.kingdom do |index|
