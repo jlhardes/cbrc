@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'thin', '1.6.2'
-gem 'sufia', :path => "/srv/rails/cbrc-devel-8518/sufia-gem/sufia"
+gem 'sufia', :path => "sufia-gem/sufia"
 gem 'kaminari', github: 'jcoyne/kaminari', branch: 'sufia'
 gem 'rdf-vocab'
 
