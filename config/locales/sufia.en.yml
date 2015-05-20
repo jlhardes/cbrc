@@ -169,7 +169,7 @@ en:
         subject: "Batch upload permission denied"
     metadata_help:
       resource_type: "Pre-defined categories to describe the type of file content being uploaded, such as \"article\" or \"dataset.\"  More than one type may be selected."
-      title: "A name for the file to aid in identifying it. Defaults to the file name, though a more descriptive title is encouraged. <em>This is a required field</em>."
+      title: "A name for the file to aid in identifying it. Defaults to the file name, though a more descriptive title is encouraged. If this is DWC.catalogNumber, then it is an identifier (preferably unique) for the record within the data set or collection. <em>This is a required field</em>."
       tag: "Words or phrases you select to describe what the file is about. These are used to search for content. <em>This is a required field</em>."
       #subject: "Headings or index terms describing what the file is about; these <em>do</em> need to conform to an existing vocabulary. Currently supports Library of Congress Subject Headings."
       creator: "The person or group responsible for the file being uploaded. Usually this is the author of the content. Personal names should be entered with the last name first, e.g. \"Smith, John.\" <em>This is a required field</em>."
