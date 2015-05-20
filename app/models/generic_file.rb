@@ -1,6 +1,10 @@
 # app/models/generic_file.rb
 class GenericFile < ActiveFedora::Base
   include Sufia::GenericFile
+  # testing to see if this will override Sufia Title field with DWC term
+  property :title, predicate: ::RDF::Vocab::DWC.catalogNumber do |index|
+        index.as :stored_searchable, :facetable
+  end
   property :collectionCode, predicate: ::RDF::Vocab::DWC.collectionCode do |index|
 	index.as :stored_searchable, :facetable
   end
